@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Título -->
+        <h1>CALCULADORA IMC</h1>
+    </header>
+    <!-- Formulário -->
+    <form>
+        <h3>Cálculo IMC</h3>
+        <!-- Seção -->
+        <section>
+            <!-- Primeira div -->
+            <div>
+                <!-- Rótulo "Altura" -->
+                <label> Altura(M)
+                    <input type="number" id="numAltura" placeholder="Digite sua altura" />
+                </label>
+            </div>
+            <!-- Segunda div -->
+            <div>
+                <!-- Rótulo "Peso" -->
+                <label> Peso(KG)
+                    <input type="number" id="numPeso" placeholder="Digite seu peso KG" />
+                </label>
+            </div>
+            <!-- Terceira div -->
+            <div>
+                <!-- Rótulo "Sexo" -->
+                <label>Sexo
+                    <input type="text" id="txtsexo" placeholder="Digite o seu sexo" />
+                </label>
+            </div>
+            <!-- Botões -->
+            <input type="button" id="bt" value="Resultado" onclick="Resultado()" />
+            <input type="reset" id="rt" value="Resetar" onclick="Resetar()" />
+            <div id="res"></div>
+        </section>
+        <!-- Rodapé -->
+        <footer> &copy; Desenvolvido por Gui Bicudo</footer>
+        <!-- Ligação com o JavaScript -->
+        <script src="index.js"></script>
+    </form>
+</body>
+
+</html>

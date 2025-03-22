@@ -1,0 +1,84 @@
+body {
+    font-style: oblique;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    font-style: normal;
+    background-color: yellow;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 50px auto; /* Centraliza horizontalmente */
+    border-radius: 20px;
+    width: 300px; /* Largura fixa */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+    border-style: ridge;
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* Posiciona verticalmente */
+    justify-content: center;
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaçamento uniforme entre os elementos */
+    margin: 10px 0;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px); /* Ajusta para incluir padding */
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #000; /* Adiciona borda */
+    border-radius: 5px; /* Arredonda os cantos */
+}
+
+input#bt, input#rt {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    margin: 5px 0;
+    padding: 10px;
+    width: calc(100% - 20px); /* Alinha com a largura dos inputs */
+    cursor: pointer;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda os botões */
+}
+
+#res {
+    padding: 20px;
+    border: 1px solid #000; /* Adiciona borda ao resultado */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Tom de fundo suave */
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: rgb(173, 173, 55);
+    }
+
+    header {
+        color: black;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: rgb(245, 170, 30);
+    }
+
+    form { 
+        background-color: orange;
+    }
+
+    header {
+        color: black;
+    }
+}
